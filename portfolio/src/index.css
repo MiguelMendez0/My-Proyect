@@ -1,0 +1,74 @@
+/* Google Fonts font-family: "Press Start 2P", system-ui; */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+/* Google Fonts font-family: "Nunito", sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root{
+  background-color: #00021b;
+  padding: 0;
+  margin: 0;
+}
+
+.portfolio{
+display: flex;
+flex-direction: row;
+}
+
+.portfolio .circle{
+  border-radius: 50%;
+  width: 320px;
+  height: 320px;
+  background-color: rgb(70, 70, 70);
+  align-content: center;
+  justify-items: center;
+}
+
+
+.portfolio .circle2{
+ border-radius: 50%;
+ width: 300px;
+ height: 300px;
+ background-color: rgb(255, 255, 255);
+ align-content: center;
+ text-align: center;
+ padding: 0;
+ margin: 0;
+}
+
+.portfolio .circle img{
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+}
+
+.portfolio .text_header{
+  color: rgb(255, 255, 255);
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;;
+  text-align: start;
+}
+
+
+.portfolio .text_header #tecno{
+  font-family: "Press Start 2P", system-ui;
+  font-size: 40px;
+  color: #1eff00;
+}
+
+.portfolio .text_header p{
+  text-align: center;
+}
+
+.portfolio .list_skills ul{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.portfolio .list_skills li{
+  list-style: none;
+  font-family: "Press Start 2P", system-ui;
+  font-size: 15px;
+  color: #7700df;
+}
+
