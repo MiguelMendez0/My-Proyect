@@ -3,18 +3,21 @@
 /* Google Fonts font-family: "Nunito", sans-serif;*/
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-:root{
-  background-color: #00021b;
-  padding: 0;
+html,
+body {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
   margin: 0;
+  padding: 0;
 }
 
-.portfolio{
-display: flex;
-flex-direction: row;
+:root {
+  background-color: #00021b;
 }
 
-.portfolio .circle{
+
+.portfolio .circle {
   border-radius: 50%;
   width: 320px;
   height: 320px;
@@ -24,51 +27,149 @@ flex-direction: row;
 }
 
 
-.portfolio .circle2{
- border-radius: 50%;
- width: 300px;
- height: 300px;
- background-color: rgb(255, 255, 255);
- align-content: center;
- text-align: center;
- padding: 0;
- margin: 0;
+.portfolio .circle2 {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  background-color: rgb(255, 255, 255);
+  align-content: center;
+  justify-items: center;
+  padding: 0;
+  margin: 0;
 }
 
-.portfolio .circle img{
+.portfolio .circle img {
   width: 280px;
   height: 280px;
   border-radius: 50%;
 }
 
-.portfolio .text_header{
+.portfolio .text_header {
   color: rgb(255, 255, 255);
   font-family: "Nunito", sans-serif;
-  font-size: 20px;;
-  text-align: start;
+  font-size: 20px;
+  ;
+  text-align: center;
 }
 
 
-.portfolio .text_header #tecno{
+.portfolio .text_header #tecno {
   font-family: "Press Start 2P", system-ui;
   font-size: 40px;
   color: #1eff00;
 }
 
-.portfolio .text_header p{
+.portfolio .text_header p {
   text-align: center;
 }
 
-.portfolio .list_skills ul{
+.portfolio .list_skills ul {
   display: flex;
   flex-direction: row;
   gap: 30px;
 }
 
-.portfolio .list_skills li{
+.portfolio .list_skills li {
   list-style: none;
   font-family: "Press Start 2P", system-ui;
   font-size: 15px;
   color: #7700df;
 }
 
+/* SmartPhones */
+@media (max-width:768px) {
+  #root {
+    width: 100%;
+    height: auto;
+  }
+
+  .portfolio {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 0;
+
+    align-items: center;
+    margin-top: 5%;
+  }
+
+  .portfolio .circle {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+  }
+
+  .portfolio .circle2 {
+    width: 120px;
+    height: 120px;
+  }
+
+  .portfolio .circle img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .portfolio .text_header {
+    width: 100%;
+    height: auto;
+    padding-top: 5%;
+    text-align: start;
+  }
+
+  .portfolio .text_header #tecno {
+    font-size: 20px;
+    padding-left: 5%;
+
+  }
+
+  .portfolio .text_header p {
+    font-size: 12px;
+    margin-top: 2%;
+  }
+
+  .portfolio .list_skills {
+    width: 100%;
+    height: auto;
+    margin-top: 2%;
+    justify-items: center;
+    align-content: center;
+  }
+
+  .portfolio .list_skills ul {
+    width: 90%;
+    gap: 0;
+    padding: 0;
+    text-align: center;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .portfolio .list_skills li {
+    font-size: 10px;
+  }
+
+}
+
+@media(max-width:768px) and (orientation:landscape) {
+  .portfolio .list_skills ul {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Laptops */
+@media (min-width: 769px) and (max-width: 1919px) {
+  .portfolio {
+    gap: 10%;
+    padding-left: 5%;
+  }
+}
+
+/* Monitors and tv */
+@media (min-width: 1920px) and (max-width: 2048px) {
+  .portfolio {
+    gap: 20%;
+    padding-left: 5%;
+  }
+}
