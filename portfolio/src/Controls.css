@@ -1,0 +1,47 @@
+/* Google Fonts   font-family: "Chakra Petch", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Prosto+One&display=swap');
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+    width: 70px;
+    height: 70px;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Chakra Petch", sans-serif;
+}
+
+.button_shadow {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    transition: 0.5s ease;
+}
+
+.button_shadow:hover {
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.container .back {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 2%;
+}
+
+.container .next {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 2%;
+}

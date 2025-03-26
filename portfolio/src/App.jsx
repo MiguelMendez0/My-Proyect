@@ -1,27 +1,16 @@
 import { useState } from 'react'
-function App() {
-  const [count, setCount] = useState(0)
 
+function App({ }) {
+  const [count, setCount] = useState(0)
   return (
     <>
-      <div className="portfolio flex flex-row mt-10">
-        <div className='circle'>
-          <div className='circle2'>
-            <img src="/Me.png" alt="React Logo" className="w-16 h-16" />
-          </div>
-        </div>
-
-        <div className='text_header'>
-          <span id='tecno'>Hi everyone...</span>
-          <p className="text-sm md:text-base mt-10">My name is Miguel and this is my personal portfolio</p>
-          <div className='list_skills mt-10'>
-            <ul>
-              <li>&lt;System Ingennier&gt;</li>
-              <li>&lt;FrontEnd Developer Jr&gt;</li>
-              <li>&lt;Pentester Jr&gt;</li>
-            </ul>
-          </div>
-        </div>
+      <div className="container_carrusel">
+        <div className="portfolio flex flex-row mt-10"></div>
+        <div className="portfolio2 flex flex-row mt-10"></div>
+        <div className="portfolio3 flex flex-row mt-10"></div>
+        <div className="portfolio4 flex flex-row mt-10"></div>
+        <div className="portfolio5 flex flex-row mt-10"></div>
+        <div className="portfolio6 flex flex-row mt-10"></div>
       </div>
     </>
   )
